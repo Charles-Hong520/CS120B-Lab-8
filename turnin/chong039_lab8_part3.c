@@ -31,13 +31,17 @@ int main(void) {
     DDRA = 0x00; PORTA = 0xFF; 
     DDRB = 0xFF; PORTB = 0x00; 
     DDRC = 0xFF; PORTC = 0x00; 
-    DDRD = 0x03; PORTD = 0x00; 
+    DDRD = 0x03; PORTD = 0x00;
     ADC_init();
-    x=0;
+    unsigned short max = 0x03FF; //Every bit.
+    unsigned char tmpB = 0;
+    unsigned short adc = 0;
+
     while (1) {
-        x = ADC;
-        PORTB = (unsigned char)x;
-        PORTD = (unsigned char)(x >> 8);
+        adc=ADC;
+        if(adc>=max/2) tmpB=0x01;
+        else tmpB=0x00;
+        PORTB=tmpB;
     }
 
     return 1;
