@@ -1,13 +1,13 @@
 /*	Author: Charles Hong
  *  Partner(s) Name: N/A
  *	Lab Section: 022
- *	Assignment: Lab #8  Exercise #1
- *	Exercise Description: ADC onto 10 LEDs
+ *	Assignment: Lab #8  Exercise #4
+ *	Exercise Description: show more LEDs with more light
  *
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
  *  
- *  Demo Link: 
+ *  Demo Link: https://drive.google.com/file/d/1xErBpb3cWM8kNQQhqhwNCJH8KhOZbsVr/view?usp=sharing
  */
 #include <avr/io.h>
 
